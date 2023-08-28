@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="my.css" />
+    <link rel="icon" type="image/png" href="./assets/images.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="cbnblotter.js"></script> -->
 </head>
 <body>
-    <a href="./assets/tabulator_share.png"></a>
+  <!-- Banner -->
+  <div class="Banner">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="./assets/images.png" style="height: 10%; width: 18%; display: flex; justify-content: center;"/>
+    </div>
+  <br />
+  <!-- Heading -->
+  <div class="heading">
+    <center><h1 style="color: white;">CBN FX Blotter Reporting System.</h1></center>
+  </div>
+</div>
+<br>
+<br>
+<!-- Sidebar -->
+<div class="sidebar">  
+<p><button class="Upload">Upload<i class="fa fa-upload"></i></button></p>
+<!-- <button style="font-size:24px">Button <i class="fa fa-upload"></i></button> -->
+<p><button class="Download" onclick="this.innerHTML = 'select date range below'"; onmouseout="this.innerHTML = 'Download'";>Download<i class="fa fa-download"></i></button></p>
+<p><button class="VPT" onclick="this.innerHTML = 'select date range below'"; onmouseout="this.innerHTML = 'View Pending Trade'">View Pending Trade<i class="fa fa-eye"></i></button></p>
+<p><button class="VPoT" onclick="this.innerHTML = 'select date range below'"; onmouseout="this.innerHTML = 'View Posted Trade'">View Posted Trade<i class="fa fa-eye"></i></button></p>
+<p><button class="VFT" onclick="this.innerHTML = 'select date range below'"; onmouseout="this.innerHTML = 'View Failed Trade'">View Failed Trade<i class="fa fa-eye"></i></button></p>
+</div> 
+
+<!-- Date: showing date range selection -->
+<div class="datecontainer">
+<div id="reportrange" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+    <i class="fa fa-calendar"></i>&nbsp;
+    <span></span> <i class="fa fa-caret-down"></i>
+</div>
+
+</div>
+
+<!-- </div> -->
+
 </body>
 </html>
