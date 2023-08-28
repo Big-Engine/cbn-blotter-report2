@@ -10,15 +10,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       <link rel="https://www.vecteezy.com/png/19896026-male-user-avatar-icon-in-black-colors-person-signs-illustration" href="my.css"
     />
-    <!-- <link href="dist/css/tabulator.min.css" rel="stylesheet">
-<script type="text/javascript" src="dist/js/tabulator.min.js"></script> -->
+    <link rel="icon" type="image/png" href="./assets/images.png">
   </head>
   <body>
     <!-- Banner -->
     <div class="Banner">
       <!-- Keystone Bank -->
       <div class="logo">
-        <center>
+        <!-- <center> -->
           <img
             src="./assets/images.png"
             style="
@@ -31,71 +30,77 @@
         </center>
       </div>
       <br />
-      <br />
-      <br />
+      <!-- <br />
+      <br /> -->
       <!-- Marquee -->
       <div class="marquee">
         <marquee>CBN FX Blotter Reporting System.</marquee>
       </div>
     </div>
 
+    <!-- Background-Image -->
+    <!-- <div class="backimg">
+    <img src="./assets/background image.avif" style="width: 100%; border-top: 10px; border-color: azure;"> -->
+
     <!-- Side Bar -->
     <!-- Add font awesome icons to buttons   -->
-    <div class="Container1" style="padding: -1%;">
+    <div class="Container1">
       <!-- Home -->
       <br>
       <button class="btn">
         <i
           class="fa fa-home"
           style="font-size: 50px; color: #0563a5"
-        ></i></button
+        ; onmouseover="this.innerHTML = 'Home'"; onmouseout="this.HTML = 'fa fa-home'"></i></button
       ><br />
       <!-- Dashboard -->
       <br />
-      <b
-        ><button><text style="color: #0563a5">Dashboard</text></button></b
-      >
-      <br />
-      <br />
-      <b><button><text style="color: #0563a5">Upload</text></button></b>
-      <br />
-      <br />
-      <b><button><text style="color: #0563a5">Download</text></button></b>
-      <br />
-      <br />
-      <b><button><text style="color: #0563a5">Logout</text></button></b>
+      <a href="./Dashboard.html"><p><b
+        ><button style="font-size: large;"><text style="color: #0563a5"; onclick="this.innerHTML = 'welcome!'"; onmouseout="this.innerHTML = 'Dashboard'";>Dashboard</text></button></b
+      > </p></a>
+      
+      <p><b><button style="font-size: large"><text style="color: #0563a5"; onclick="this.innerHTML = 'Thank you'"; onmouseout="this.innerHTML = 'Upload'">Upload</text></button></b></p>
+      
+      <p><b><button style="font-size: large"><text style="color: #0563a5"; onclick="this.innerHTML = 'Thank you'"; onmouseout="this.innerHTML = 'Download'">Download</text></button></b></p>
+      
+      <p><b><button style="font-size: large"><text style="color: #0563a5">Logout</text></button></b></p>
     </div>
 
-    <!-- Table Report -->
-    <div id="table"></div>
-
-    <!-- Body Image -->
+    <!-- Body Image
     <div class="img">
     <center>
         <img src="./assets/working on report.webp"/>
-    </center></div>
+    </center></div> -->
     <br />
-      <br />
-      <br />
 
     <!-- Login -->
     <!-- Flip Card -->
-    <div class="flip-card">
+    <center><div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <h1>User</h1>
-            <img src="./assets/Login user.jpg" alt="Avatar" style="width: 60px;height:60px; color: #0563a5;">
+            <img src="./assets/Login user.jpg" alt="Avatar" style="width: 60px;height:140px; color: #0563a5;">
           </div>
           <div class="flip-card-back">
-            <!-- <h1>User</h1> -->
-            <p>Username</p>
-            <p>password</p>
+            <!-- <h1>HTML Forms</h1> -->
+            <!-- <p>Username</p>
+            <p>Password</p>
+            <p>Login</p> -->
+            <form action="/action_page.php">
+            <p><label for="Uname">Username:</label></p>
+            <input type="text" id="Uname" name="Uname" value="Ayodele"><br>
+            <p><label for="Pass">Password:</label></p>
+            <input type="text" id="Pass" name="Pass" value="Password"><br><br>
+            <p><button onclick="this.innerHTML = 'Successful'">Submit</button></p>
+          </form> 
           </div>
         </div>
-      </div><br>
+      </div></center><br>
       <br>
     </div>
     </div>
    
   </body>
+  <!-- linking javascript -->
+  <!-- <script src="cbnblotter.js"></script> -->
 </html>
